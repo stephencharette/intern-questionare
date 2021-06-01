@@ -1,5 +1,6 @@
 require 'json'
 
+puts "_____________________________________________________________________________________________"
 puts "INTERN QUESTIONARE"
 print "Please enter your name for documentation purposes, the following information will not be sold
 or distributed. "
@@ -25,6 +26,7 @@ print "Question #9: What streaming service would you recommend? *excluding Hulu*
 nine = gets.chomp
 print "Question #10: What is your opinion on pickles? "
 ten = gets.chomp
+puts
 
 data_hash = {
     "answers": {
@@ -53,3 +55,4 @@ File.open('./sample-data.json', 'w') do |f|
 end
 
 puts "Thank you for filling out the INTERN QUESTIONAIRE."
+puts "_____________________________________________________________________________________________"
